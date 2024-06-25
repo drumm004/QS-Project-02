@@ -1,0 +1,13 @@
+* {
+    margin: 0rem;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Madimi One", sans-serif;
+    color: rgb(43, 198, 226);
+    font-size: 55px;
+    background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,214,1) 50%, rgba(69,252,228,1) 100%);
+    margin-bottom: 0rem;
+
+}
