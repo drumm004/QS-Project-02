@@ -3,11 +3,89 @@
     padding: 0;
 }
 
+.navbar {
+    font-family: "Madimi One", sans-serif;
+    background: linear-gradient(45deg, rgb(246, 245, 248) 0%, rgb(63, 253, 29) 50%, rgb(69, 240, 252) 100%);
+    margin-bottom: 0rem;
+}
+
+body {
+    background-image: url(../images/3418448.jpg);
+}
+
 h1 {
     font-family: "Madimi One", sans-serif;
     color: rgb(43, 198, 226);
     font-size: 55px;
-    background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,214,1) 50%, rgba(69,252,228,1) 100%);
-    margin-bottom: 0rem;
+}
 
+div#btn1 {
+    padding: 0%;
+    float: left;
+    margin-left: 5px;
+}
+
+div#btn2 {
+    padding: 0%;
+    float: right;
+    margin-right: 5px;
+}
+
+.button {
+    background-color: darkorchid;    
+    border: 0 solid #E5E7EB;
+    border-radius: 16px;
+    box-sizing: border-box;
+    color: lightblue;
+    display: flex;
+    font-family: "Madimi One", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 200px;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+      
+.button:focus {
+        outline: 0;
+}
+      
+.button:after {
+        content: '';
+        position: absolute;
+        border: 1.5px solid #024038;
+        border-radius: 16px;
+        bottom: 4px;
+        left: 4px;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+}
+      
+.button:hover:after {
+        bottom: 2px;
+        left: 2px;
+}
+      
+      @media (min-width: 768px) {
+        .button {
+          padding: .75rem 3rem;
+          font-size: 1.25rem;
+        }
+      }
+
+footer {
+    padding-top: 70px;
+    text-align: center;
 }
