@@ -6,17 +6,43 @@
 .navbar {
     font-family: "Madimi One", sans-serif;
     background: linear-gradient(45deg, rgb(246, 245, 248) 0%, rgb(63, 253, 29) 50%, rgb(69, 240, 252) 100%);
-    margin-bottom: 0rem;
+}
+
+.navbar-collapse {
+    justify-content: right;
 }
 
 body {
     background-image: url(../images/3418448.jpg);
+    
+}
+
+.opening {
+    color: #0dcaf0;
+    max-width: 100%;
+    position: absolute;
+    top: 25%;
 }
 
 h1 {
     font-family: "Madimi One", sans-serif;
-    color: rgb(43, 198, 226);
-    font-size: 55px;
+    text-align: center;
+}
+
+.search-bar {
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    max-width: 60%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 div#btn1 {
@@ -36,7 +62,7 @@ div#btn2 {
     border: 0 solid #E5E7EB;
     border-radius: 16px;
     box-sizing: border-box;
-    color: lightblue;
+    color: #0dcaf0;
     display: flex;
     font-family: "Madimi One", serif;
     font-size: 1rem;
@@ -86,6 +112,10 @@ div#btn2 {
       }
 
 footer {
-    padding-top: 70px;
-    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: right;
+    background-color: #0dcaf0;
 }
