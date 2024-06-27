@@ -1,4 +1,4 @@
-const API_KEY="lSAMJWItJZzHYeXvlctHi3ebBgyDckAh"
+const API_KEY="KsZLDr69nDEELdE1IQEZmZAtpXRbSKlz"
     const PAGE_SIZE=10;
     let offset=0;
     function handleClickRandom() {
@@ -13,6 +13,7 @@ const API_KEY="lSAMJWItJZzHYeXvlctHi3ebBgyDckAh"
             .then((json) => {
                 console.log(json);
                 const data = json.data.images.fixed_height.url;
-                elementOutputArea.innerHTML = `<div>${JSON.stringify(data)}</div>`;
+                elementOutputArea.innerHTML = data; 
+                
             });
     }
