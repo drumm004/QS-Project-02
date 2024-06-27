@@ -13,15 +13,18 @@
 }
 
 body {
+    max-width: 100%;
+    max-height: fit-content;
+    align-content: center;
     background-image: url(../images/3418448.jpg);
-    
+    background-position: 5%;
 }
 
 .opening {
     color: #0dcaf0;
     max-width: 100%;
     position: absolute;
-    top: 25%;
+    top: 10%;
 }
 
 h1 {
@@ -39,15 +42,25 @@ p {
 .search-bar {
     max-width: 100%;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#search {
+    border: none;
+    border-radius: 10px;
+    max-width: 400px;
+    padding: 7px;
+    font-size: 20px;
+    background-color: aqua;
+    color: #a60dff;
 }
 
 .btn {
     max-width: 60%;
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -119,11 +132,12 @@ div#btn2 {
       }
 
 .output {
+    display: flex;
+    
     max-width: 100%;
     position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 30px;
+    justify-content: center;
 }
 
 footer {
