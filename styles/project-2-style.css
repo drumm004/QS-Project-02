@@ -58,23 +58,26 @@ p {
 }
 
 .btn {
-    max-width: 60%;
+    max-width: 65%;
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 }
 
 div#btn1 {
     padding: 0%;
     float: left;
     margin-left: 5px;
+    align-self: center;
 }
 
 div#btn2 {
     padding: 0%;
     float: right;
     margin-right: 5px;
+    align-self: center;
 }
 
 .button {
@@ -141,6 +144,29 @@ div#btn2 {
     justify-content: space-evenly;
 }
 
+.pagination {
+    max-width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:5px;
+  }
+  .buttons button{
+    border:none;
+    padding:0.4rem 1.2rem;
+    background-color:purple;
+    color:white;
+    border-radius:5px;
+    cursor:pointer
+  }
+  
+  
 footer {
     position: fixed;
     bottom: 0;

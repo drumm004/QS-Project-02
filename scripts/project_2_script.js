@@ -43,4 +43,43 @@ const API_KEY="KsZLDr69nDEELdE1IQEZmZAtpXRbSKlz"
                     
             }
         });
+    }
+
+
+const list = document.querySelector("#data-list");
+const prevButton = document.querySelector("#prev");
+const nextButton = document.querySelector("#next");
+
+let startIndex = 0;
+let endIndex = 10;
+
+const mapData = () => {
+  const slicedData = dataSet
+    .slice(startIndex, endIndex)
+    .map((row) => {
+      return `<li>${row.name}</li>`;
+    })
+    .join("");
+  list.innerHTML = slicedData;
 }
+
+mapData();
+
+prevButton.addEventListener("click", () => {
+  if (endIndex < 20) {
+    startIndex = 0;
+    endIndex = 10;
+  } else {
+    startIndex -= 10;
+    endIndex -= 10;
+  }
+  
+});
+
+nextButton.addEventListener("click", () => {
+  if (endIndex < dataSet.length) {
+    startIndex += 10;
+    endIndex += 10;
+  }
+  
+});
