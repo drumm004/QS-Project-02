@@ -24,7 +24,7 @@ body {
     color: #0dcaf0;
     max-width: 100%;
     position: absolute;
-    top: 10%;
+    top: 12%;
 }
 
 h1 {
@@ -133,11 +133,12 @@ div#btn2 {
 
 .output {
     display: flex;
-    
-    max-width: 100%;
+    justify-self: center;
+    max-height: 220px;
+    flex-wrap: wrap;
     position: absolute;
     bottom: 30px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 footer {
