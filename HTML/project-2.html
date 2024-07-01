@@ -38,7 +38,6 @@
                 <br>
                 Have Fun!</p>
         </div>
-            <form action="Search">
                 <div class="search-bar">
                     <input type="text" id="search" placeholder="Search Term...">
                 </div>
@@ -46,17 +45,16 @@
                     <div id="btn1">
                         <button class="button" role="button" type="button" onclick="handleClickArray()">Search</button>
                     </div>
-                    <div class="pagination" id="pagination">
+                    <div class="pagination" id="data-list">
                         <div class="buttons">
-                            <button id="prev"> < </button>
-                            <button id="next"> > </button>
+                            <button id="previous" role="button" type="button" onclick="handleClickPrev()"> < </button>
+                            <button id="next" role="button" type="button" onclick="handleClickNext()"> > </button>
                         </div>
                     </div>
                     <div id="btn2">
                         <button class="button" role="button" type="button" onclick="handleClickRandom()">Random</button>
                     </div>
                 </div>
-            </form>
         <div class="output container-fluid" id="outputArea"></div>
     </main>
     <footer>

@@ -1,4 +1,6 @@
 const API_KEY="KsZLDr69nDEELdE1IQEZmZAtpXRbSKlz"
+let total_count = 0;
+
     const PAGE_SIZE=10;
     let offset=0;
     function handleClickRandom() {
@@ -34,52 +36,29 @@ const API_KEY="KsZLDr69nDEELdE1IQEZmZAtpXRbSKlz"
             .then((json) => {
                 console.log(json);
                 console.log(json.pagination);
+                total_count = json.pagination.total_count;
                 elementOutputArea.innerHTML = "";
                 for (let data of json.data) {
-                    //let tag = `<div>${JSON.stringify(data.title)}</div>`
                     const url = data.images.fixed_height.url;
                     let img=`<img src="${url}" alt="${data.title}" />`
                     elementOutputArea.innerHTML += img;
                     
-            }
-        });
+                }
+            });
     }
 
 
-const list = document.querySelector("#data-list");
-const prevButton = document.querySelector("#prev");
-const nextButton = document.querySelector("#next");
+   function handleClickNext() {
+        if (offset < total_count) {    
+            offset += PAGE_SIZE;
+            handleClickArray();
+        }
+   }    
 
-let startIndex = 0;
-let endIndex = 10;
-
-const mapData = () => {
-  const slicedData = dataSet
-    .slice(startIndex, endIndex)
-    .map((row) => {
-      return `<li>${row.name}</li>`;
-    })
-    .join("");
-  list.innerHTML = slicedData;
-}
-
-mapData();
-
-prevButton.addEventListener("click", () => {
-  if (endIndex < 20) {
-    startIndex = 0;
-    endIndex = 10;
-  } else {
-    startIndex -= 10;
-    endIndex -= 10;
-  }
-  
-});
-
-nextButton.addEventListener("click", () => {
-  if (endIndex < dataSet.length) {
-    startIndex += 10;
-    endIndex += 10;
-  }
-  
-});
+    function handleClickPrev() {
+        console.log(offset);
+        if (offset >= PAGE_SIZE) {
+            offset -= PAGE_SIZE;
+            handleClickArray();
+        }
+    }   
