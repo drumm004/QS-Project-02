@@ -137,7 +137,6 @@ div#btn2 {
 .output {
     max-width: 1000px;
     max-height: 220px;
-    place-self: ;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
