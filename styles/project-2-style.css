@@ -135,9 +135,10 @@ div#btn2 {
       }
 
 .output {
-    display: flex;
-    justify-self: center;
+    max-width: 1000px;
     max-height: 220px;
+    place-self: ;
+    display: flex;
     flex-wrap: wrap;
     position: absolute;
     bottom: 30px;
@@ -156,15 +157,16 @@ div#btn2 {
     display:flex;
     justify-content:center;
     gap:5px;
-  }
-  .buttons button{
+}
+
+.buttons button{
     border:none;
     padding:0.4rem 1.2rem;
     background-color:purple;
     color:white;
     border-radius:5px;
     cursor:pointer
-  }
+}
   
   
 footer {
@@ -174,6 +176,7 @@ footer {
     height: 25px;
     background-color: #0dcaf0; 
 }
+
 .footer {
     padding-right: 5px;
     color: white !important;
